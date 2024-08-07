@@ -9,28 +9,38 @@ import { FaFacebook, FaGoogle, FaTwitter, FaYoutube } from "react-icons/fa";
 
 const BottomFooter = ["Privacy Policy", "Cookie Policy", "Terms"];
 const Resources = [
-  "Articles",
-  "Blog",
-  "Chart Sheet",
-  "Code challenges",
-  "Docs",
-  "Projects",
-  "Videos",
-  "Workspaces",
+  "E-Learning Software",
+  "Online Classes",
+  "Payment Gateway",
+  "School Mobile App",
+  "Finance Management",
+  "Fee Management",
+  "Visitor Management",
+  "Student Information",
+  "Admission Management",
+  "Exam Proctoring",
+  "Transport App",
+  "HR Management",
+  "Biometric Integration",
+  "GPS & Bus Tracking",
+  "Library Management",
+  "Staff Payroll",
+  "Digital Content",
+  "RFID System",
 ];
 const Plans = ["Paid memberships", "For students", "Business solutions"];
 const Community = ["Forums", "Chapters", "Events"];
 
 const Footer = () => {
   return (
-    <div className="bg-richblack-800">
-      <div className="flex lg:flex-row gap-8 items-center justify-between w-11/12 max-w-maxContent text-richblack-400 leading-6 mx-auto relative py-14">
+    <div className="bg-white">
+      <div className="flex lg:flex-row gap-8 items-center justify-between w-11/12 max-w-maxContent text-richblack-500 leading-6 mx-auto relative py-14">
         <div className="border-b w-[100%] flex flex-col justify-center lg:flex-row pb-5 border-richblack-700">
           {/* Section 1 */}
-          <div className="lg:w-[70%] flex flex-wrap flex-row justify-between  pl-3 lg:pr-5 gap-3">
+          <div className="lg:w-[70%] flex  flex-row justify-between  pl-3 lg:pr-5 gap-3">
             <div className="w-[30%] flex flex-col gap-3 lg:w-[30%] mb-7 lg:pl-0">
               <img src={Logo} alt="" className="object-contain w-[60%] mb-3" /> 
-              <h1 className="text-richblack-50 font-semibold text-[16px]">
+              <h1 className="text-richblack-500 font-semibold text-[16px]">
                 Company
               </h1>
               <div className="flex flex-col gap-2">
@@ -54,19 +64,20 @@ const Footer = () => {
               <div></div>
             </div>
 
-            <div className="w-[48%] lg:w-[30%] mb-7 lg:pl-0">
-              <h1 className="text-richblack-50 font-semibold text-[16px]">
-                Resources
+            {/* resources */}
+            <div className="w-[60%] md:w-[90%] mb-7 lg:pl-0">
+              <h1 className="text-richblack-500 font-semibold text-[16px]">
+                Services
               </h1>
 
-              <div className="flex flex-col gap-2 mt-2">
+              <div className=" grid grid-rows-5 md:grid-cols-4 grid-cols-2 md:gap-x-11 md:gap-y-4 gap-4 mt-4">
                 {Resources.map((ele, index) => {
                   return (
                     <div
                       key={index}
-                      className="text-[14px] cursor-pointer hover:text-richblack-50 transition-all duration-200"
+                      className="text-[14px] md:w-[130%]  cursor-pointer hover:text-richblack-900 transition-all duration-200"
                     >
-                      <Link to={ele.split(" ").join("-").toLowerCase()}>
+                      <Link to={ele.split(" ").join("-").toLowerCase()} className=" w-fit">
                         {ele}
                       </Link>
                     </div>
@@ -74,15 +85,19 @@ const Footer = () => {
                 })}
               </div>
 
-              <h1 className="text-richblack-50 font-semibold text-[16px] mt-7">
+              {/* support */}
+              {/* <h1 className="text-richblack-50 font-semibold text-[16px] mt-7">
                 Support
               </h1>
               <div className="text-[14px] cursor-pointer hover:text-richblack-50 transition-all duration-200 mt-2">
                 <Link to={"/help-center"}>Help Center</Link>
-              </div>
+              </div> */}
+
+
             </div>
 
-            <div className="w-[48%] lg:w-[30%] mb-7 lg:pl-0">
+            {/* plans */}
+            {/* <div className="w-[48%] lg:w-[30%] mb-7 lg:pl-0">
               <h1 className="text-richblack-50 font-semibold text-[16px]">
                 Plans
               </h1>
@@ -101,6 +116,8 @@ const Footer = () => {
                   );
                 })}
               </div>
+
+              community
               <h1 className="text-richblack-50 font-semibold text-[16px] mt-7">
                 Community
               </h1>
@@ -119,7 +136,7 @@ const Footer = () => {
                   );
                 })}
               </div>
-            </div>
+            </div> */}
           </div>
 
         </div>

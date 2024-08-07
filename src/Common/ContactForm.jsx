@@ -15,7 +15,7 @@ const ContactForm = () => {
      <div className='flex lg:flex-row flex-col gap-x-4'>
        {/* First Name */}
        <div className='flex flex-col gap-y-1'>
-        <label className=' font-edu-sa text-lg'>First Name:</label>
+        <label className=' font-inter text-lg'>First Name:</label>
         <input
           type='text'
           id='firstname'
@@ -28,7 +28,7 @@ const ContactForm = () => {
 
       {/* last name */}
       <div className='flex flex-col gap-y-1'>
-        <label className=' font-edu-sa text-lg'>Last Name:</label>
+        <label className=' font-inter text-lg'>Last Name:</label>
         <input
           type='text'
           id='LastName'
@@ -42,7 +42,7 @@ const ContactForm = () => {
 
       {/* Email */}
       <div className='flex flex-col gap-y-1'>
-        <label className=' font-edu-sa text-lg'>Email:</label>
+        <label className=' font-inter text-lg'>Email:</label>
         <input
           type='email'
           id='Email'
@@ -55,7 +55,7 @@ const ContactForm = () => {
 
       {/* Mobile No. */}
       <div className='flex flex-col gap-y-1'>
-        <label className=' font-edu-sa text-lg'>Mobile Number:</label>
+        <label className=' font-inter text-lg'>Mobile Number:</label>
         <input
           type='tel'
           id='PhoneNo'
@@ -68,7 +68,7 @@ const ContactForm = () => {
 
       {/* message */}
       <div className='flex flex-col gap-y-1'>
-        <label className=' font-edu-sa text-lg'>Message:</label>
+        <label className=' font-inter text-lg'>Message:</label>
         <textarea
           cols={5}
           rows={4}

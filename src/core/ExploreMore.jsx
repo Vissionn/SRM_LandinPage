@@ -30,7 +30,7 @@ const ExploreMore = () => {
 
   return (
     <div className=' py-10'>
-      <div className="flex flex-col rounded-md md:flex-row md:gap-x-2 gap-5 text-richblack-200 items-center bg-richblack-50  mx-auto w-max p-1 lg:rounded-full font-medium drop-shadow-[0_1.5px_rgba(255,255,255,0.25) ">
+      <div className="flex flex-col rounded-md md:flex-row md:gap-x-2 gap-5 text-richblack-200 items-center bg-richblack-50  mx-auto w-max  md:p-1 py-2  lg:rounded-full font-medium drop-shadow-[0_1.5px_rgba(255,255,255,0.25) ">
         {tabName.map((tab, index) => {
           return (
             <span
@@ -51,9 +51,9 @@ const ExploreMore = () => {
       
         <motion.div key={Card.heading} 
         initial={{opacity:0}} animate={{opacity:1}} className= {`flex md:flex-row flex-col-reverse items-center md:justify-center max-w-[70%] mx-auto mt-14 rounded-lg shadow-lg`}>
-          <div className=" flex flex-col items-start md:w-[80%] xl:w-[80%] gap-y-4 px-8">
-            <h1 className=" text-4xl font-medium font-inter" data-aos="fade-down">{Card.heading}</h1>
-            <p className=" w-[80%] text-richblack-600 text-lg" data-aos="zoom-in-up">
+          <div className=" flex flex-col md:items-start md:w-[80%] xl:w-[80%] gap-y-4 px-8">
+            <h1 className=" text-4xl font-medium font-inter px-8 md:px-0" data-aos="fade-down">{Card.heading}</h1>
+            <p className=" md:w-[80%] w-full text-richblack-600 text-lg px-8 md:px-0 py-8 md:py-0" data-aos="zoom-in-up">
               {Card.description}
             </p>
           </div>
