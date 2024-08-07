@@ -59,7 +59,7 @@ const ExploreMore = () => {
           </div>
 
           <motion.div  className=" md:w-[40%] py-4 ">
-            <img src={Card.img} width={1500} data-aos="zoom-in" />
+            <img src={Card.img} width={1500} alt='Card' data-aos="zoom-in" />
           </motion.div>
         </motion.div>
       
