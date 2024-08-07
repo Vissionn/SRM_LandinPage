@@ -28,8 +28,8 @@ const Resources = [
   "Digital Content",
   "RFID System",
 ];
-const Plans = ["Paid memberships", "For students", "Business solutions"];
-const Community = ["Forums", "Chapters", "Events"];
+// const Plans = ["Paid memberships", "For students", "Business solutions"];
+// const Community = ["Forums", "Chapters", "Events"];
 
 const Footer = () => {
   return (

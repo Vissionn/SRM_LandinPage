@@ -1,16 +1,16 @@
 import React, { useEffect } from 'react'
-import Banner from "../assets/Images/Banner.mp4"
-import { CardData } from '../Data/CardsData'
-import SchoolImg from "../assets/Images/Schoolimg.png"
-import {leftSideService, Service, Services} from "../Data/Services"
-import {RightSideService} from "../Data/Services"
+// import Banner from "../assets/Images/Banner.mp4"
+// import { CardData } from '../Data/CardsData'
+// import SchoolImg from "../assets/Images/Schoolimg.png"
+import { Services} from "../Data/Services"
+// import {RightSideService} from "../Data/Services"
 import CommonBtn from '../Common/CommonBtn'
 import Footer from '../Common/Footer'
-import whySmsLogo from "../assets/Images/why sms.png"
+// import whySmsLogo from "../assets/Images/why sms.png"
 // import implementationPhase from "../assets/Images/working-process.png"
 import school from "../assets/Images/school.jpeg"
 import { IoIosArrowRoundForward } from "react-icons/io";
-import ContactForm from '../Common/ContactForm'
+// import ContactForm from '../Common/ContactForm'
 import { Link, useNavigate } from 'react-router-dom'
  import boyOnline from "../assets/Images/covid-education.jpg"
  import ManLaptop from "../assets/Images/man-with-laptop.jpeg"
@@ -26,7 +26,7 @@ import TallyForm from '../Common/TallyForm'
 
 const HomePage = () => {
 
-  const navigate = useNavigate()
+  // const navigate = useNavigate()
 
 useEffect(() => {
   AOS.init({

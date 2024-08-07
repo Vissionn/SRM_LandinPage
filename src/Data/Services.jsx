@@ -153,24 +153,4 @@ export const Services = [
 ]
 
 
-export const RightSideService = [
-    {
-        icon : img4,
-        heading: "Parent – Teacher Interaction Module",
-        desc: "School ERP software helps parents to get real-time access to their child's daily performance.",
-        btntext : "Read More",
-    },
-    {
-        icon : img5,
-        heading: "Accounting: Managing School Fee System",
-        desc: "This Software helps in managing student fee collection records.",
-        btntext : "Read More",
-    },
-    {
-        icon : img6,
-        heading: "Online Admission Management System",
-        desc: "It provides a secured login portal for students with one-time password protection (OTP) for admission.",
-        btntext : "Read More",
-    },
-    
-]
+

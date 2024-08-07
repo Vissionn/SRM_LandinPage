@@ -34,10 +34,10 @@ const TallyForm = () => {
 
 
   return (
-    <div className="md:w-[80%] lg:w-[30%] h-[50%] mx-auto  px-3 py-6 " style={{ textAlign: 'center', padding: '20px',  }}>
+    <div className="md:w-[80%] lg:w-[30%] h-[50%] mx-auto  px-3 py-6 " >
     <iframe data-tally-src="https://tally.so/embed/w52W0E?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" 
     width="100%"
-     height="276" 
+     height="100%" 
      title="Contact form">   
      </iframe>
 
