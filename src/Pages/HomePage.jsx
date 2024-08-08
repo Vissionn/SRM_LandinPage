@@ -15,7 +15,8 @@ import { Link, useNavigate } from 'react-router-dom'
  import boyOnline from "../assets/Images/covid-education.jpg"
  import ManLaptop from "../assets/Images/man-with-laptop.jpeg"
  import Data from '../Data/SectionThirdData'
- import * as Icons from "react-icons/fa"
+//  import * as Icons from "react-icons/ti"
+//  import * as Icons1 from "react-icons/fa"
  import man from "../assets/Images/dedicated.jpg"
  import gaol from "../assets/Images/goal.png"
  import history from "../assets/Images/history.png"
@@ -199,12 +200,13 @@ useEffect(() => {
           <img src={school} alt='school' data-aos="fade-in"/>
           <div className=' grid grid-cols-2 md:grid-cols-4 gap-10 p-4 '>
           {Services.map((service,index) => {
-            const Icon = Icons[service?.icon]
+            {/* const Icon = Icons[service?.icon] || Icons1[service?.icon] */}
             return(
               <div key={index} className=' cursor-pointer '>
               <Link to={service?.path} className='flex flex-col items-center gap-y-2'>
               <figure className=' text-blue-500 text-4xl transition-all duration-150 hover:-translate-y-1'>
-                <Icon/>
+                {/* <Icon/> */}
+                {service?.icon}
               </figure>
               <span className=' font-medium text-richblack-700'>{service?.name}</span>
               </Link>
