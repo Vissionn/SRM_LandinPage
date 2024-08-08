@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-// import Banner from "../assets/Images/Banner.mp4"
+import Banner from "../assets/Images/Banner.mp4"
 // import { CardData } from '../Data/CardsData'
 // import SchoolImg from "../assets/Images/Schoolimg.png"
 import { Services} from "../Data/Services"
@@ -261,7 +261,7 @@ useEffect(() => {
         <div>
         <img src={man} alt='man' className=' lg:border-gray-400 rounded-full shadow-md ' data-aos="fade-left"/>
         </div>
-        
+
         
         </div>
         <div className=' h-[50px] shadow-lg px-4 py-3 bg-richblack-50'></div>
@@ -274,9 +274,24 @@ useEffect(() => {
 
         {/* Section-7 Get In Touch */}
         <div className=' flex flex-col gap-y-6 justify-center items-center px-3 bg-smoke py-20 mx-auto'>
-        <h1 className='  text-4xl font-inter font-semibold'>Get in Touch Now</h1>
-        <div className=' md:w-[60%] lg:w-full'>
+      
+        <div className='  flex sm:flex-row flex-col'>
+        
+        <video
+            muted
+            loop
+            autoPlay
+            width={700}
+            className="rounded-lg w-[50%]  ml-3 sm:block hidden"
+            data-aos="fade-in"
+          >
+            <source src={Banner} type="video/mp4"/>
+          </video>
+        
+        
         <TallyForm/>
+
+      
         </div>
         
         </div>

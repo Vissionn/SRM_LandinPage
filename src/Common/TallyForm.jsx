@@ -35,6 +35,7 @@ const TallyForm = () => {
 
   return (
     <div className="md:w-[80%] lg:w-[30%] h-[50%] mx-auto  px-3 py-6 " >
+      <h1 className='  text-4xl font-inter font-semibold ml-2'>Get in Touch Now</h1>
     <iframe data-tally-src="https://tally.so/embed/w52W0E?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" 
     width="100%"
      height="100%" 
